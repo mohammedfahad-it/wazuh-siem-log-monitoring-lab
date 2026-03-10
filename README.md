@@ -33,3 +33,12 @@ A Wazuh SIEM server was deployed on Kali Linux to collect logs from a Windows en
 ![Log Analysis]
 
 <img width="752" height="1062" alt="Screenshot 2026-03-10 130641" src="https://github.com/user-attachments/assets/bd441659-3b1c-4675-9415-c0b6d55a78bf" />
+
+## Skills Demonstrated
+
+- SIEM Implementation
+- Log Monitoring and Analysis
+- Endpoint Security Monitoring
+- Linux System Administration
+- Windows Endpoint Configuration
+- Firewall Configuration
