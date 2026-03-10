@@ -1,44 +1,51 @@
-# Wazuh SIEM Home Lab
+# Wazuh SIEM Log Monitoring Lab
 
-This project demonstrates the implementation of a Security Information and Event Management (SIEM) environment using Wazuh for centralized log monitoring and security event analysis.
+This project demonstrates the implementation of a Security Information and Event Management (SIEM) environment using Wazuh for centralized log monitoring and security analysis.
 
-## Overview
+## Project Overview
 
-A Wazuh SIEM server was deployed on Kali Linux to collect logs from a Windows endpoint using the Wazuh agent. The collected logs were analyzed through the Wazuh dashboard.
+The objective of this project was to deploy and configure a Wazuh SIEM environment and monitor endpoint logs in a lab setup.
 
-## Tools Used
+The Wazuh server was installed on Kali Linux and a Windows endpoint was configured with the Wazuh agent to forward system logs to the server. These logs were then monitored and analyzed through the Wazuh dashboard.
+
+## Tools and Technologies
 
 - Wazuh SIEM
 - Kali Linux
 - Windows 8.1
 - VirtualBox
 
-## Key Tasks
+## Architecture
 
-- Installed Wazuh manager, indexer, and dashboard
-- Configured firewall rules for agent communication
-- Installed Wazuh agent on Windows endpoint
-- Registered the agent with the Wazuh manager
-- Analyzed logs using the Wazuh Discover dashboard
+Wazuh Manager (Kali Linux)  
+↓  
+Wazuh Agent (Windows Endpoint)  
+↓  
+Centralized Log Collection  
+↓  
+Security Event Monitoring and Analysis
+
+## Implementation Steps
+
+1. Installed Wazuh server components (Manager, Indexer, Dashboard) on Kali Linux.
+2. Configured firewall rules to allow agent communication.
+3. Installed the Wazuh agent on a Windows endpoint.
+4. Authenticated the agent with the Wazuh manager.
+5. Verified successful agent registration in the dashboard.
+6. Analyzed logs using the Discover tab in Wazuh.
 
 ## Screenshots
 
 ### Agent Registration
-![Agent Connected]
-
-<img width="755" height="1064" alt="Screenshot 2026-03-10 130819" src="https://github.com/user-attachments/assets/43fef5c8-d1d9-458c-874b-2f600909a0e5" />
-
+![Agent Connected](screenshots/wazuh-agent-connected.png)
 
 ### Log Analysis
-![Log Analysis]
+![Log Analysis](screenshots/wazuh-log-analysis.png)
 
-<img width="752" height="1062" alt="Screenshot 2026-03-10 130641" src="https://github.com/user-attachments/assets/bd441659-3b1c-4675-9415-c0b6d55a78bf" />
+## Results
 
-## Skills Demonstrated
+The Wazuh SIEM setup successfully collected logs from the Windows endpoint and displayed them on the dashboard, enabling centralized monitoring and analysis of security events.
 
-- SIEM Implementation
-- Log Monitoring and Analysis
-- Endpoint Security Monitoring
-- Linux System Administration
-- Windows Endpoint Configuration
-- Firewall Configuration
+## Author
+
+Mohammed Fahad P H
